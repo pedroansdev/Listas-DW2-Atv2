@@ -12,6 +12,13 @@ app.get('/', function(req, res){
     res.render('index')
 })
 
+app.post('/', (req, res)=>{
+    const nome = req.body.nome
+    const idade = req.body.idade
+
+    res.render('bemvindo', {nome: nome, idade: idade})
+})
+
 app.listen(3000, function(erro){
     if(erro){
         console.log('Ocorreu um erro')
