@@ -1,12 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem-Vindo</title>
-</head>
-<body>
+<%- include('base'); -%>
     <h1>Olá <%= nome %>!</h1>
-    <h2>Vou te apresentar algumas coisas que eu gosto</h2>
+    <h1>Vou te apresentar algumas coisas que eu gosto</h2>
+    <hr>
+    <h2>CS:GO</h3>
+    <img src="<%= cs2 %>" alt="Imagem do CS2" class="cs2">
+    <h2>Linguagens que eu uso</h3>
+    <h3>TypeScript</h3>
+    <img src="<%= tsLogo %>" alt="Imagem do TS" class="logos">
+    <h3>JavaScript</h3>
+    <img src="<%= jsLogo %>" alt="Imagem do JS" class="logos">
+    <h2>Projeto do meu amigo</h3>
+    <h3><a href="https://rafael-nunes-silva.github.io/WebGL-Learning/" target="_blank">Link do projeto</a></h2>
+    <iframe src="https://rafael-nunes-silva.github.io/WebGL-Learning/particleSim.html" frameborder="0"></iframe>
 </body>
 </html>
