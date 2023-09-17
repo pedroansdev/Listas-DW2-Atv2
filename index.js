@@ -30,6 +30,12 @@ app.post('/', (req, res)=>{
     res.render('bemvindo', variaveis)
 })
 
+app.post('/final', (req, res)=>{
+    const titulo = 'Final'
+
+    res.render('final', {titulo: titulo})
+})
+
 app.listen(3000, function(erro){
     if(erro){
         console.log('Ocorreu um erro')
